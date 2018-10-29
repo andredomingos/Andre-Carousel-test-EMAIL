@@ -1,0 +1,1696 @@
+<html class="">
+
+<head>
+
+  <style>
+
+    body {
+      background-color: #ffffff;
+      margin: 0 0 0 0;
+    }
+    table, td {
+      border-collapse: collapse !important;
+    }
+    input {
+      display: none;
+    }
+    label {
+      cursor: pointer;
+    }
+    @media only screen and (max-width: 500px), only screen and (max-device-width: 500px) {
+      .widthFull {
+        width: 100% !important;
+      }
+      .photo {
+        width: 100% !important;
+        height: auto !important;
+      }
+    }
+    #A2:checked~* .A2,
+    #A3:checked~* .A3,
+    #B2:checked~* .B2,
+    #B3:checked~* .B3,
+    #C2:checked~* .C2,
+    #C3:checked~* .C3 {
+      background-color: #489f87 !important;
+    }
+    #A1:checked~ #B1:checked~ #C1:checked~* .A1B1C1,
+    #A1:checked~ #B1:checked~ #C2:checked~* .A1B1C2,
+    #A1:checked~ #B1:checked~ #C3:checked~* .A1B1C3,
+    #A1:checked~ #B2:checked~ #C1:checked~* .A1B2C1,
+    #A1:checked~ #B2:checked~ #C2:checked~* .A1B2C2,
+    #A1:checked~ #B2:checked~ #C3:checked~* .A1B2C3,
+    #A1:checked~ #B3:checked~ #C1:checked~* .A1B3C1,
+    #A1:checked~ #B3:checked~ #C2:checked~* .A1B3C2,
+    #A1:checked~ #B3:checked~ #C3:checked~* .A1B3C3,
+    #A2:checked~ #B1:checked~ #C1:checked~* .A2B1C1,
+    #A2:checked~ #B1:checked~ #C2:checked~* .A2B1C2,
+    #A2:checked~ #B1:checked~ #C3:checked~* .A2B1C3,
+    #A2:checked~ #B2:checked~ #C1:checked~* .A2B2C1,
+    #A2:checked~ #B2:checked~ #C2:checked~* .A2B2C2,
+    #A2:checked~ #B2:checked~ #C3:checked~* .A2B2C3,
+    #A2:checked~ #B3:checked~ #C1:checked~* .A2B3C1,
+    #A2:checked~ #B3:checked~ #C2:checked~* .A2B3C2,
+    #A2:checked~ #B3:checked~ #C3:checked~* .A2B3C3,
+    #A3:checked~ #B1:checked~ #C1:checked~* .A3B1C1,
+    #A3:checked~ #B1:checked~ #C2:checked~* .A3B1C2,
+    #A3:checked~ #B1:checked~ #C3:checked~* .A3B1C3,
+    #A3:checked~ #B2:checked~ #C1:checked~* .A3B2C1,
+    #A3:checked~ #B2:checked~ #C2:checked~* .A3B2C2,
+    #A3:checked~ #B2:checked~ #C3:checked~* .A3B2C3,
+    #A3:checked~ #B3:checked~ #C1:checked~* .A3B3C1,
+    #A3:checked~ #B3:checked~ #C2:checked~* .A3B3C2,
+    #A3:checked~ #B3:checked~ #C3:checked~* .A3B3C3 {
+      display: block !important;
+    }
+    #KOD:checked~* .KOD,
+    #V1:checked~* .V1,
+    #V2:checked~* .V2,
+    #V3:checked~* .V3,
+    #V4:checked~* .V4,
+    #V5:checked~* .V5,
+    #V6:checked~* .V6,
+    #V7:checked~* .V7,
+    #V8:checked~* .V8,
+    #V9:checked~* .V9,
+    #V10:checked~* .V10,
+    #V11:checked~* .V11,
+    #V12:checked~* .V12,
+    #V13:checked~* .V13,
+    #V14:checked~* .V14,
+    #V15:checked~* .V15,
+    #V16:checked~* .V16,
+    #V17:checked~* .V17,
+    #V18:checked~* .V18,
+    #V19:checked~* .V19,
+    #V20:checked~* .V20,
+    #V21:checked~* .V21,
+    #V22:checked~* .V22,
+    #V23:checked~* .V23,
+    #V24:checked~* .V24,
+    #V25:checked~* .V25,
+    #V26:checked~* .V26,
+    #V27:checked~* .V27 {
+      display: table !important;
+    }
+    .camiah {
+      bottom: 0;
+      color: #5e68c7;
+      font-family: Courier, Helvetica, Arial, sans-serif;
+      font-size: 10px;
+      line-height: 12px;
+      position: fixed;
+      right: 0;
+      text-align: center;
+    }
+    .camiah .show {
+      display: none;
+    }
+    .camiah:hover .show, .camiah a {
+      display: block;
+    }
+    .camiah svg {
+      fill: #5e68c7;
+      margin: 3px 18px 15px;
+      width: 25px;
+    }
+  </style>
+
+</head>
+
+<body>
+
+<table cellpadding="0" cellspacing="0" border="0" width="100%">
+  <tr>
+    <td align="center" valign="top">
+      <input type="radio" id="A1" name="drink" style="display:none !important;" checked="checked">
+      <input type="radio" id="A2" name="drink" style="display:none !important;">
+      <input type="radio" id="A3" name="drink" style="display:none !important;">
+      <input type="radio" id="B1" name="attire" style="display:none !important;" checked="checked">
+      <input type="radio" id="B2" name="attire" style="display:none !important;">
+      <input type="radio" id="B3" name="attire" style="display:none !important;">
+      <input type="radio" id="C1" name="decor" style="display:none !important;" checked="checked">
+      <input type="radio" id="C2" name="decor" style="display:none !important;">
+      <input type="radio" id="C3" name="decor" style="display:none !important;">
+      <input type="radio" id="KOD" name="version" style="display:none !important;" checked="checked">
+      <input type="radio" id="V1" name="version" style="display:none !important;">
+      <input type="radio" id="V2" name="version" style="display:none !important;">
+      <input type="radio" id="V3" name="version" style="display:none !important;">
+      <input type="radio" id="V4" name="version" style="display:none !important;">
+      <input type="radio" id="V5" name="version" style="display:none !important;">
+      <input type="radio" id="V6" name="version" style="display:none !important;">
+      <input type="radio" id="V7" name="version" style="display:none !important;">
+      <input type="radio" id="V8" name="version" style="display:none !important;">
+      <input type="radio" id="V9" name="version" style="display:none !important;">
+      <input type="radio" id="V10" name="version" style="display:none !important;">
+      <input type="radio" id="V11" name="version" style="display:none !important;">
+      <input type="radio" id="V12" name="version" style="display:none !important;">
+      <input type="radio" id="V13" name="version" style="display:none !important;">
+      <input type="radio" id="V14" name="version" style="display:none !important;">
+      <input type="radio" id="V15" name="version" style="display:none !important;">
+      <input type="radio" id="V16" name="version" style="display:none !important;">
+      <input type="radio" id="V17" name="version" style="display:none !important;">
+      <input type="radio" id="V18" name="version" style="display:none !important;">
+      <input type="radio" id="V19" name="version" style="display:none !important;">
+      <input type="radio" id="V20" name="version" style="display:none !important;">
+      <input type="radio" id="V21" name="version" style="display:none !important;">
+      <input type="radio" id="V22" name="version" style="display:none !important;">
+      <input type="radio" id="V23" name="version" style="display:none !important;">
+      <input type="radio" id="V24" name="version" style="display:none !important;">
+      <input type="radio" id="V25" name="version" style="display:none !important;">
+      <input type="radio" id="V26" name="version" style="display:none !important;">
+      <input type="radio" id="V27" name="version" style="display:none !important;">
+      <table cellpadding="0" cellspacing="0" border="0" width="100%">
+        <tr>
+          <td align="center" valign="top">
+            <table class="KOD widthFull" cellpadding="0" cellspacing="0" border="0" width="500" style="display:none;">
+              <tr>
+                <td align="center" valign="top" style="padding:25px 0 25px 0;">
+                  <table cellpadding="0" cellspacing="0" border="0">
+                    <tr>
+                      <td align="center" valign="top">
+                        <table cellpadding="0" cellspacing="0" border="0">
+                          <tr>
+                            <td align="center" valign="top">
+                              <table class="widthFull" cellpadding="0" cellspacing="0" border="0" width="500">
+                                <tr>
+                                  <td align="center" valign="top" style="font-family:Helvetica, Arial, sans-serif; font-size:30px; mso-line-height-rule:exactly; line-height:34px; color:#3a3a3a; padding:0 20px 10px 20px;">
+                                    <strong>2 KINDS&nbsp;OF&nbsp;DEVS</strong>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td align="center" valign="top" style="font-family:Helvetica, Arial, sans-serif; font-size:30px; mso-line-height-rule:exactly; line-height:34px; color:#3a3a3a; padding:0 20px 20px 20px;">
+                                    What kind are&nbsp;you?
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td align="left" valign="top" style="padding:0 0 20px 0;">
+                                    <table cellpadding="0" cellspacing="0" border="0">
+                                      <tr>
+                                        <td width="50%" align="left" valign="top" style="padding:10px 10px 10px 10px; border:1px solid #3a3a3a;">
+                                          <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                                            <tr>
+                                              <td class="A2" align="left" valign="top" style="padding:5px 5px 5px 5px; border-radius:10px;"><label for="A2"><img src="http://tabletrtd.com/codepen/DD-talk-01.png" alt="" width="230" border="0" style="display:block;" class="photo"></label></td>
+                                            </tr>
+                                            <tr>
+                                              <td align="center" valign="top" style="font-family:Helvetica, Arial, sans-serif; font-size:14px; mso-line-height-rule:exactly; line-height:20px; color:#3a3a3a; padding:10px 10px 0 10px;">
+                                                CUPPA'&nbsp;JOE
+                                              </td>
+                                            </tr>
+                                          </table>
+                                        </td>
+                                        <td width="50%" align="left" valign="top" style="padding:10px 10px 10px 10px; border:1px solid #3a3a3a;">
+                                          <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                                            <tr>
+                                              <td class="A3" align="left" valign="top" style="padding:5px 5px 5px 5px; border-radius:10px;"><label for="A3"><img src="http://tabletrtd.com/codepen/DD-talk-02.png" alt="" width="230" border="0" style="display:block;" class="photo"></label></td>
+                                            </tr>
+                                            <tr>
+                                              <td align="center" valign="top" style="font-family:Helvetica, Arial, sans-serif; font-size:14px; mso-line-height-rule:exactly; line-height:20px; color:#3a3a3a; padding:10px 10px 0 10px;">
+                                                ENERGIZER
+                                              </td>
+                                            </tr>
+                                          </table>
+                                        </td>
+                                      </tr>
+                                    </table>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td align="left" valign="top" style="padding:0 0 20px 0;">
+                                    <table cellpadding="0" cellspacing="0" border="0">
+                                      <tr>
+                                        <td width="50%" align="left" valign="top" style="padding:10px 10px 10px 10px; border:1px solid #3a3a3a;">
+                                          <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                                            <tr>
+                                              <td class="B2" align="left" valign="top" style="padding:5px 5px 5px 5px; border-radius:10px;"><label for="B2"><img src="http://tabletrtd.com/codepen/DD-talk-03.png" alt="" width="230" border="0" style="display:block;" class="photo"></label></td>
+                                            </tr>
+                                            <tr>
+                                              <td align="center" valign="top" style="font-family:Helvetica, Arial, sans-serif; font-size:14px; mso-line-height-rule:exactly; line-height:20px; color:#3a3a3a; padding:10px 10px 0 10px;">
+                                                DON'T MISS A&nbsp;BUTTON
+                                              </td>
+                                            </tr>
+                                          </table>
+                                        </td>
+                                        <td width="50%" align="left" valign="top" style="padding:10px 10px 10px 10px; border:1px solid #3a3a3a;">
+                                          <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                                            <tr>
+                                              <td class="B3" align="left" valign="top" style="padding:5px 5px 5px 5px; border-radius:10px;"><label for="B3"><img src="http://tabletrtd.com/codepen/DD-talk-04.png" alt="" width="230" border="0" style="display:block;" class="photo"></label></td>
+                                            </tr>
+                                            <tr>
+                                              <td align="center" valign="top" style="font-family:Helvetica, Arial, sans-serif; font-size:14px; mso-line-height-rule:exactly; line-height:20px; color:#3a3a3a; padding:10px 10px 0 10px;">
+                                                GRAPHIC&nbsp;TEE
+                                              </td>
+                                            </tr>
+                                          </table>
+                                        </td>
+                                      </tr>
+                                    </table>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td align="left" valign="top" style="padding:0 0 20px 0;">
+                                    <table cellpadding="0" cellspacing="0" border="0">
+                                      <tr>
+                                        <td width="50%" align="left" valign="top" style="padding:10px 10px 10px 10px; border:1px solid #3a3a3a;">
+                                          <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                                            <tr>
+                                              <td class="C2" align="left" valign="top" style="padding:5px 5px 5px 5px; border-radius:10px;"><label for="C2"><img src="http://tabletrtd.com/codepen/DD-talk-05.png" alt="" width="230" border="0" style="display:block;" class="photo"></label></td>
+                                            </tr>
+                                            <tr>
+                                              <td align="center" valign="top" style="font-family:Helvetica, Arial, sans-serif; font-size:14px; mso-line-height-rule:exactly; line-height:20px; color:#3a3a3a; padding:10px 10px 0 10px;">
+                                                FRESH AND&nbsp;CLEAN
+                                              </td>
+                                            </tr>
+                                          </table>
+                                        </td>
+                                        <td width="50%" align="left" valign="top" style="padding:10px 10px 10px 10px; border:1px solid #3a3a3a;">
+                                          <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                                            <tr>
+                                              <td class="C3" align="left" valign="top" style="padding:5px 5px 5px 5px; border-radius:10px;"><label for="C3"><img src="http://tabletrtd.com/codepen/DD-talk-06.png" alt="" width="230" border="0" style="display:block;" class="photo"></label></td>
+                                            </tr>
+                                            <tr>
+                                              <td align="center" valign="top" style="font-family:Helvetica, Arial, sans-serif; font-size:14px; mso-line-height-rule:exactly; line-height:20px; color:#3a3a3a; padding:10px 10px 0 10px;">
+                                                SO&nbsp;FRESH
+                                              </td>
+                                            </tr>
+                                          </table>
+                                        </td>
+                                      </tr>
+                                    </table>
+                                  </td>
+                                </tr>
+                              </table>
+                              <table cellpadding="0" cellspacing="0" border="0">
+                                <tr>
+                                  <td bgcolor="#3a3a3a" align="center" valign="top" style="padding:1px 1px 1px 1px;">
+                                    <table cellpadding="0" cellspacing="0" border="0" width="300">
+                                      <tr>
+                                        <td align="center" valign="middle" height="42" bgcolor="#ffffff" style="font-family:Helvetica, Arial, sans-serif; font-size:18px; mso-line-height-rule:exactly; line-height:22px; color:#3a3a3a; padding:0 0 0 0;">
+                                          <strong>
+                                            <label for="V1" class="A1B1C1" style="color:#3a3a3a; text-decoration:none; display:none; padding:10px 10px 10px 10px;">LET'S SEE WHAT YOU GET</label>
+                                            <label for="V2" class="A1B1C2" style="color:#3a3a3a; text-decoration:none; display:none; padding:10px 10px 10px 10px;">LET'S SEE WHAT YOU GET</label>
+                                            <label for="V3" class="A1B1C3" style="color:#3a3a3a; text-decoration:none; display:none; padding:10px 10px 10px 10px;">LET'S SEE WHAT YOU GET</label>
+                                            <label for="V4" class="A1B2C1" style="color:#3a3a3a; text-decoration:none; display:none; padding:10px 10px 10px 10px;">LET'S SEE WHAT YOU GET</label>
+                                            <label for="V5" class="A1B2C2" style="color:#3a3a3a; text-decoration:none; display:none; padding:10px 10px 10px 10px;">LET'S SEE WHAT YOU GET</label>
+                                            <label for="V6" class="A1B2C3" style="color:#3a3a3a; text-decoration:none; display:none; padding:10px 10px 10px 10px;">LET'S SEE WHAT YOU GET</label>
+                                            <label for="V7" class="A1B3C1" style="color:#3a3a3a; text-decoration:none; display:none; padding:10px 10px 10px 10px;">LET'S SEE WHAT YOU GET</label>
+                                            <label for="V8" class="A1B3C2" style="color:#3a3a3a; text-decoration:none; display:none; padding:10px 10px 10px 10px;">LET'S SEE WHAT YOU GET</label>
+                                            <label for="V9" class="A1B3C3" style="color:#3a3a3a; text-decoration:none; display:none; padding:10px 10px 10px 10px;">LET'S SEE WHAT YOU GET</label>
+                                            <label for="V10" class="A2B1C1" style="color:#3a3a3a; text-decoration:none; display:none; padding:10px 10px 10px 10px;">LET'S SEE WHAT YOU GET</label>
+                                            <label for="V11" class="A2B1C2" style="color:#3a3a3a; text-decoration:none; display:none; padding:10px 10px 10px 10px;">LET'S SEE WHAT YOU GET</label>
+                                            <label for="V12" class="A2B1C3" style="color:#3a3a3a; text-decoration:none; display:none; padding:10px 10px 10px 10px;">LET'S SEE WHAT YOU GET</label>
+                                            <label for="V13" class="A2B2C1" style="color:#3a3a3a; text-decoration:none; display:none; padding:10px 10px 10px 10px;">LET'S SEE WHAT YOU GET</label>
+                                            <label for="V14" class="A2B2C2" style="color:#3a3a3a; text-decoration:none; display:none; padding:10px 10px 10px 10px;">LET'S SEE WHAT YOU GET</label>
+                                            <label for="V15" class="A2B2C3" style="color:#3a3a3a; text-decoration:none; display:none; padding:10px 10px 10px 10px;">LET'S SEE WHAT YOU GET</label>
+                                            <label for="V16" class="A2B3C1" style="color:#3a3a3a; text-decoration:none; display:none; padding:10px 10px 10px 10px;">LET'S SEE WHAT YOU GET</label>
+                                            <label for="V17" class="A2B3C2" style="color:#3a3a3a; text-decoration:none; display:none; padding:10px 10px 10px 10px;">LET'S SEE WHAT YOU GET</label>
+                                            <label for="V18" class="A2B3C3" style="color:#3a3a3a; text-decoration:none; display:none; padding:10px 10px 10px 10px;">LET'S SEE WHAT YOU GET</label>
+                                            <label for="V19" class="A3B1C1" style="color:#3a3a3a; text-decoration:none; display:none; padding:10px 10px 10px 10px;">LET'S SEE WHAT YOU GET</label>
+                                            <label for="V20" class="A3B1C2" style="color:#3a3a3a; text-decoration:none; display:none; padding:10px 10px 10px 10px;">LET'S SEE WHAT YOU GET</label>
+                                            <label for="V21" class="A3B1C3" style="color:#3a3a3a; text-decoration:none; display:none; padding:10px 10px 10px 10px;">LET'S SEE WHAT YOU GET</label>
+                                            <label for="V22" class="A3B2C1" style="color:#3a3a3a; text-decoration:none; display:none; padding:10px 10px 10px 10px;">LET'S SEE WHAT YOU GET</label>
+                                            <label for="V23" class="A3B2C2" style="color:#3a3a3a; text-decoration:none; display:none; padding:10px 10px 10px 10px;">LET'S SEE WHAT YOU GET</label>
+                                            <label for="V24" class="A3B2C3" style="color:#3a3a3a; text-decoration:none; display:none; padding:10px 10px 10px 10px;">LET'S SEE WHAT YOU GET</label>
+                                            <label for="V25" class="A3B3C1" style="color:#3a3a3a; text-decoration:none; display:none; padding:10px 10px 10px 10px;">LET'S SEE WHAT YOU GET</label>
+                                            <label for="V26" class="A3B3C2" style="color:#3a3a3a; text-decoration:none; display:none; padding:10px 10px 10px 10px;">LET'S SEE WHAT YOU GET</label>
+                                            <label for="V27" class="A3B3C3" style="color:#3a3a3a; text-decoration:none; display:none; padding:10px 10px 10px 10px;">LET'S SEE WHAT YOU GET</label>
+                                          </strong>
+                                        </td>
+                                      </tr>
+                                    </table>
+                                  </td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+            <table class="V2" cellpadding="0" cellspacing="0" border="0" width="100%" style="display:none;">
+              <tr>
+                <td align="center" valign="top" style="font-family:Helvetica, Arial, sans-serif; font-size:12px; mso-line-height-rule:exactly; line-height:16px; color:#3a3a3a; padding:20px 20px 20px 20px;">
+                  <webversion target="_blank" style="color:#3a3a3a; text-decoration:underline;">Scan Online</webversion>
+                </td>
+              </tr>
+              <tr>
+                <td bgcolor="#86878b" background="http://tabletrtd.com/codepen/DD-talk-07.jpg" width="500" height="250" align="center" valign="bottom" style="font-family:'Libre Franklin', Helvetica, Arial, sans-serif; font-size:30px; mso-line-height-rule:exactly; line-height:34px; color:#ffffff; padding:0 0 0 0; background-size:100% auto; border-radius:2px;">
+                  <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                    <tr>
+                      <td align="center" valign="top" style="padding:0 0 20px 0;">
+                        <table cellpadding="0" cellspacing="0" border="0">
+                          <tr>
+                            <td bgcolor="#ffffff" align="center" valign="middle" style="font-family:'Libre Franklin', Helvetica, Arial, sans-serif; font-size:30px; mso-line-height-rule:exactly; line-height:34px; color:#3a3a3a; padding:10px 20px 10px 20px; border-radius:2px;"><strong>Welcome</strong></td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td align="center" valign="top"><img src="http://tabletrtd.com/codepen/DD-talk-11.png" alt="" width="100%" height="30" border="0" style="display:block;"></td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr>
+                <td align="center" valign="top" style="font-family:Helvetica, Arial, sans-serif; font-size:14px; mso-line-height-rule:exactly; line-height:20px; color:#3a3a3a; padding:20px 20px 20px 20px;">Is this the real life? Or is this just&nbsp;fantasy?</td>
+              </tr>
+              <tr>
+                <td align="center" valign="top" style="padding:0 0 20px 0;">
+                  <table cellpadding="0" cellspacing="0" border="0">
+                    <tr>
+                      <td bgcolor="#ffffff" style="padding:2px 2px 2px 2px; border-radius:6px;">
+                        <table cellpadding="0" cellspacing="0" border="0">
+                          <tr>
+                            <td bgcolor="#3a3a3a" style="padding:2px 2px 2px 2px; border-radius:4px;">
+                              <table cellpadding="0" cellspacing="0" border="0" width="300">
+                                <tr>
+                                  <td align="center" valign="middle" height="42" bgcolor="#ffffff" style="font-family:Helvetica, Arial, sans-serif; font-size:18px; mso-line-height-rule:exactly; line-height:22px; color:#3a3a3a; padding:0 0 0 0; border-radius:2px;"><strong><label for="KOD" style="color:#3a3a3a; text-decoration:none; display:block; padding:10px 10px 10px 10px;">UPDATE YOUR SELECTIONS</label></strong></td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+            <table class="V3" cellpadding="0" cellspacing="0" border="0" width="100%" style="display:none;">
+              <tr>
+                <td align="center" valign="top" style="padding:0 10px 0 10px;">
+                  <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                    <tr>
+                      <td align="center" valign="top" style="font-family:Helvetica, Arial, sans-serif; font-size:12px; mso-line-height-rule:exactly; line-height:16px; color:#3a3a3a; padding:20px 20px 20px 20px;">
+                        <webversion target="_blank" style="color:#3a3a3a; text-decoration:underline;">Scan Online</webversion>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td bgcolor="#86878b" background="http://tabletrtd.com/codepen/DD-talk-07.jpg" width="500" height="250" align="center" valign="bottom" style="font-family:'Libre Franklin', Helvetica, Arial, sans-serif; font-size:30px; mso-line-height-rule:exactly; line-height:34px; color:#ffffff; padding:0 0 0 0; background-size:100% auto; border-radius:10px;">
+                        <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                          <tr>
+                            <td align="center" valign="top" style="padding:0 0 20px 0;">
+                              <table cellpadding="0" cellspacing="0" border="0">
+                                <tr>
+                                  <td bgcolor="#ffffff" align="center" valign="middle" style="font-family:'Libre Franklin', Helvetica, Arial, sans-serif; font-size:30px; mso-line-height-rule:exactly; line-height:34px; color:#3a3a3a; padding:10px 20px 10px 20px; border-radius:10px;"><strong>Welcome</strong></td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td align="center" valign="top"><img src="http://tabletrtd.com/codepen/DD-talk-10.png" alt="" width="100%" height="30" border="0" style="display:block;"></td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td align="center" valign="top" style="font-family:Helvetica, Arial, sans-serif; font-size:14px; mso-line-height-rule:exactly; line-height:20px; color:#3a3a3a; padding:20px 20px 20px 20px;">Is this the real life? Or is this just&nbsp;fantasy?</td>
+                    </tr>
+                    <tr>
+                      <td align="center" valign="top" style="padding:0 0 20px 0;">
+                        <table cellpadding="0" cellspacing="0" border="0">
+                          <tr>
+                            <td bgcolor="#ffffff" style="padding:2px 2px 2px 2px; border-radius:12px;">
+                              <table cellpadding="0" cellspacing="0" border="0">
+                                <tr>
+                                  <td bgcolor="#3a3a3a" style="padding:2px 2px 2px 2px; border-radius:10px;">
+                                    <table cellpadding="0" cellspacing="0" border="0" width="300">
+                                      <tr>
+                                        <td align="center" valign="middle" height="42" bgcolor="#ffffff" style="font-family:Helvetica, Arial, sans-serif; font-size:18px; mso-line-height-rule:exactly; line-height:22px; color:#3a3a3a; padding:0 0 0 0; border-radius:8px;"><strong><label for="KOD" style="color:#3a3a3a; text-decoration:none; display:block; padding:10px 10px 10px 10px;">UPDATE YOUR SELECTIONS</label></strong></td>
+                                      </tr>
+                                    </table>
+                                  </td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+            <table class="V4 widthFull" cellpadding="0" cellspacing="0" border="0" width="500" style="display:none;">
+              <tr>
+                <td align="center" valign="top" style="font-family:Helvetica, Arial, sans-serif; font-size:12px; mso-line-height-rule:exactly; line-height:16px; color:#3a3a3a; padding:20px 20px 20px 20px;">
+                  <webversion target="_blank" style="color:#3a3a3a; text-decoration:underline;">Scan Online</webversion>
+                </td>
+              </tr>
+              <tr>
+                <td bgcolor="#86878b" background="http://tabletrtd.com/codepen/DD-talk-07.jpg" width="500" height="250" align="center" valign="bottom" style="font-family:'Libre Franklin', Helvetica, Arial, sans-serif; font-size:30px; mso-line-height-rule:exactly; line-height:34px; color:#ffffff; padding:0 0 0 0; background-size:100% auto; border-radius:0;">
+                  <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                    <tr>
+                      <td align="center" valign="top" style="padding:0 0 20px 0;">
+                        <table cellpadding="0" cellspacing="0" border="0">
+                          <tr>
+                            <td bgcolor="#eadac7" align="center" valign="middle" style="font-family:'Libre Franklin', Helvetica, Arial, sans-serif; font-size:30px; mso-line-height-rule:exactly; line-height:34px; color:#489f87; padding:10px 20px 10px 20px; border-radius:0;"><strong>Welcome</strong></td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr>
+                <td align="center" valign="top" style="font-family:Helvetica, Arial, sans-serif; font-size:14px; mso-line-height-rule:exactly; line-height:20px; color:#3a3a3a; padding:20px 20px 20px 20px;">Is this the real life? Or is this just&nbsp;fantasy?</td>
+              </tr>
+              <tr>
+                <td align="center" valign="top" style="padding:0 0 20px 0;">
+                  <table cellpadding="0" cellspacing="0" border="0">
+                    <tr>
+                      <td bgcolor="#ffffff" style="padding:2px 2px 2px 2px; border-radius:0;">
+                        <table cellpadding="0" cellspacing="0" border="0">
+                          <tr>
+                            <td bgcolor="#489f87" style="padding:2px 2px 2px 2px; border-radius:0;">
+                              <table cellpadding="0" cellspacing="0" border="0" width="300">
+                                <tr>
+                                  <td align="center" valign="middle" height="42" bgcolor="#ffffff" style="font-family:Helvetica, Arial, sans-serif; font-size:18px; mso-line-height-rule:exactly; line-height:22px; color:#489f87; padding:0 0 0 0; border-radius:0;"><strong><label for="KOD" style="color:#489f87; text-decoration:none; display:block; padding:10px 10px 10px 10px;">UPDATE YOUR SELECTIONS</label></strong></td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+            <table class="V5" cellpadding="0" cellspacing="0" border="0" width="100%" style="display:none;">
+              <tr>
+                <td align="center" valign="top" style="font-family:Helvetica, Arial, sans-serif; font-size:12px; mso-line-height-rule:exactly; line-height:16px; color:#3a3a3a; padding:20px 20px 20px 20px;">
+                  <webversion target="_blank" style="color:#3a3a3a; text-decoration:underline;">Scan Online</webversion>
+                </td>
+              </tr>
+              <tr>
+                <td bgcolor="#86878b" background="http://tabletrtd.com/codepen/DD-talk-07.jpg" width="500" height="250" align="center" valign="bottom" style="font-family:'Libre Franklin', Helvetica, Arial, sans-serif; font-size:30px; mso-line-height-rule:exactly; line-height:34px; color:#ffffff; padding:0 0 0 0; background-size:100% auto; border-radius:2px;">
+                  <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                    <tr>
+                      <td align="center" valign="top" style="padding:0 0 20px 0;">
+                        <table cellpadding="0" cellspacing="0" border="0">
+                          <tr>
+                            <td bgcolor="#eadac7" align="center" valign="middle" style="font-family:'Libre Franklin', Helvetica, Arial, sans-serif; font-size:30px; mso-line-height-rule:exactly; line-height:34px; color:#489f87; padding:10px 20px 10px 20px; border-radius:2px;"><strong>Welcome</strong></td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td align="center" valign="top"><img src="http://tabletrtd.com/codepen/DD-talk-11.png" alt="" width="100%" height="30" border="0" style="display:block;"></td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr>
+                <td align="center" valign="top" style="font-family:Helvetica, Arial, sans-serif; font-size:14px; mso-line-height-rule:exactly; line-height:20px; color:#3a3a3a; padding:20px 20px 20px 20px;">Is this the real life? Or is this just&nbsp;fantasy?</td>
+              </tr>
+              <tr>
+                <td align="center" valign="top" style="padding:0 0 20px 0;">
+                  <table cellpadding="0" cellspacing="0" border="0">
+                    <tr>
+                      <td bgcolor="#ffffff" style="padding:2px 2px 2px 2px; border-radius:6px;">
+                        <table cellpadding="0" cellspacing="0" border="0">
+                          <tr>
+                            <td bgcolor="#489f87" style="padding:2px 2px 2px 2px; border-radius:4px;">
+                              <table cellpadding="0" cellspacing="0" border="0" width="300">
+                                <tr>
+                                  <td align="center" valign="middle" height="42" bgcolor="#ffffff" style="font-family:Helvetica, Arial, sans-serif; font-size:18px; mso-line-height-rule:exactly; line-height:22px; color:#489f87; padding:0 0 0 0; border-radius:2px;"><strong><label for="KOD" style="color:#489f87; text-decoration:none; display:block; padding:10px 10px 10px 10px;">UPDATE YOUR SELECTIONS</label></strong></td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+            <table class="V6" cellpadding="0" cellspacing="0" border="0" width="100%" style="display:none;">
+              <tr>
+                <td align="center" valign="top" style="padding:0 10px 0 10px;">
+                  <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                    <tr>
+                      <td align="center" valign="top" style="font-family:Helvetica, Arial, sans-serif; font-size:12px; mso-line-height-rule:exactly; line-height:16px; color:#3a3a3a; padding:20px 20px 20px 20px;">
+                        <webversion target="_blank" style="color:#3a3a3a; text-decoration:underline;">Scan Online</webversion>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td bgcolor="#86878b" background="http://tabletrtd.com/codepen/DD-talk-07.jpg" width="500" height="250" align="center" valign="bottom" style="font-family:'Libre Franklin', Helvetica, Arial, sans-serif; font-size:30px; mso-line-height-rule:exactly; line-height:34px; color:#ffffff; padding:0 0 0 0; background-size:100% auto; border-radius:10px;">
+                        <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                          <tr>
+                            <td align="center" valign="top" style="padding:0 0 20px 0;">
+                              <table cellpadding="0" cellspacing="0" border="0">
+                                <tr>
+                                  <td bgcolor="#eadac7" align="center" valign="middle" style="font-family:'Libre Franklin', Helvetica, Arial, sans-serif; font-size:30px; mso-line-height-rule:exactly; line-height:34px; color:#489f87; padding:10px 20px 10px 20px; border-radius:10px;"><strong>Welcome</strong></td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td align="center" valign="top"><img src="http://tabletrtd.com/codepen/DD-talk-10.png" alt="" width="100%" height="30" border="0" style="display:block;"></td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td align="center" valign="top" style="font-family:Helvetica, Arial, sans-serif; font-size:14px; mso-line-height-rule:exactly; line-height:20px; color:#3a3a3a; padding:20px 20px 20px 20px;">Is this the real life? Or is this just&nbsp;fantasy?</td>
+                    </tr>
+                    <tr>
+                      <td align="center" valign="top" style="padding:0 0 20px 0;">
+                        <table cellpadding="0" cellspacing="0" border="0">
+                          <tr>
+                            <td bgcolor="#ffffff" style="padding:2px 2px 2px 2px; border-radius:12px;">
+                              <table cellpadding="0" cellspacing="0" border="0">
+                                <tr>
+                                  <td bgcolor="#489f87" style="padding:2px 2px 2px 2px; border-radius:10px;">
+                                    <table cellpadding="0" cellspacing="0" border="0" width="300">
+                                      <tr>
+                                        <td align="center" valign="middle" height="42" bgcolor="#ffffff" style="font-family:Helvetica, Arial, sans-serif; font-size:18px; mso-line-height-rule:exactly; line-height:22px; color:#489f87; padding:0 0 0 0; border-radius:8px;"><strong><label for="KOD" style="color:#489f87; text-decoration:none; display:block; padding:10px 10px 10px 10px;">UPDATE YOUR SELECTIONS</label></strong></td>
+                                      </tr>
+                                    </table>
+                                  </td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+            <table class="V7 widthFull" cellpadding="0" cellspacing="0" border="0" width="500" style="display:none;">
+              <tr>
+                <td align="center" valign="top" style="font-family:Helvetica, Arial, sans-serif; font-size:12px; mso-line-height-rule:exactly; line-height:16px; color:#3a3a3a; padding:20px 20px 20px 20px;">
+                  <webversion target="_blank" style="color:#3a3a3a; text-decoration:underline;">Scan Online</webversion>
+                </td>
+              </tr>
+              <tr>
+                <td bgcolor="#86878b" background="http://tabletrtd.com/codepen/DD-talk-07.jpg" width="500" height="250" align="center" valign="bottom" style="font-family:'Libre Franklin', Helvetica, Arial, sans-serif; font-size:30px; mso-line-height-rule:exactly; line-height:34px; color:#ffffff; padding:0 0 0 0; background-size:100% auto; border-radius:0;">
+                  <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                    <tr>
+                      <td align="center" valign="top" style="padding:0 0 20px 0;">
+                        <table cellpadding="0" cellspacing="0" border="0">
+                          <tr>
+                            <td bgcolor="#ffb70c" align="center" valign="middle" style="font-family:'Libre Franklin', Helvetica, Arial, sans-serif; font-size:30px; mso-line-height-rule:exactly; line-height:34px; color:#5e68c6; padding:10px 20px 10px 20px; border-radius:0;"><strong>Welcome</strong></td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr>
+                <td align="center" valign="top" style="font-family:Helvetica, Arial, sans-serif; font-size:14px; mso-line-height-rule:exactly; line-height:20px; color:#3a3a3a; padding:20px 20px 20px 20px;">Is this the real life? Or is this just&nbsp;fantasy?</td>
+              </tr>
+              <tr>
+                <td align="center" valign="top" style="padding:0 0 20px 0;">
+                  <table cellpadding="0" cellspacing="0" border="0">
+                    <tr>
+                      <td bgcolor="#5e68c6" style="padding:2px 2px 2px 2px; border-radius:0;">
+                        <table cellpadding="0" cellspacing="0" border="0">
+                          <tr>
+                            <td bgcolor="#ffb70c" style="padding:2px 2px 2px 2px; border-radius:0;">
+                              <table cellpadding="0" cellspacing="0" border="0" width="300">
+                                <tr>
+                                  <td align="center" valign="middle" height="42" bgcolor="#ff98b3" style="font-family:Helvetica, Arial, sans-serif; font-size:18px; mso-line-height-rule:exactly; line-height:22px; color:#5e68c6; padding:0 0 0 0; border-radius:0;"><strong><label for="KOD" style="color:#5e68c6; text-decoration:none; display:block; padding:10px 10px 10px 10px;">UPDATE YOUR SELECTIONS</label></strong></td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+            <table class="V8" cellpadding="0" cellspacing="0" border="0" width="100%" style="display:none;">
+              <tr>
+                <td align="center" valign="top" style="font-family:Helvetica, Arial, sans-serif; font-size:12px; mso-line-height-rule:exactly; line-height:16px; color:#3a3a3a; padding:20px 20px 20px 20px;">
+                  <webversion target="_blank" style="color:#3a3a3a; text-decoration:underline;">Scan Online</webversion>
+                </td>
+              </tr>
+              <tr>
+                <td bgcolor="#86878b" background="http://tabletrtd.com/codepen/DD-talk-07.jpg" width="500" height="250" align="center" valign="bottom" style="font-family:'Libre Franklin', Helvetica, Arial, sans-serif; font-size:30px; mso-line-height-rule:exactly; line-height:34px; color:#ffffff; padding:0 0 0 0; background-size:100% auto; border-radius:2px;">
+                  <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                    <tr>
+                      <td align="center" valign="top" style="padding:0 0 20px 0;">
+                        <table cellpadding="0" cellspacing="0" border="0">
+                          <tr>
+                            <td bgcolor="#ffb70c" align="center" valign="middle" style="font-family:'Libre Franklin', Helvetica, Arial, sans-serif; font-size:30px; mso-line-height-rule:exactly; line-height:34px; color:#5e68c6; padding:10px 20px 10px 20px; border-radius:2px;"><strong>Welcome</strong></td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td align="center" valign="top"><img src="http://tabletrtd.com/codepen/DD-talk-11.png" alt="" width="100%" height="30" border="0" style="display:block;"></td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr>
+                <td align="center" valign="top" style="font-family:Helvetica, Arial, sans-serif; font-size:14px; mso-line-height-rule:exactly; line-height:20px; color:#3a3a3a; padding:20px 20px 20px 20px;">Is this the real life? Or is this just&nbsp;fantasy?</td>
+              </tr>
+              <tr>
+                <td align="center" valign="top" style="padding:0 0 20px 0;">
+                  <table cellpadding="0" cellspacing="0" border="0">
+                    <tr>
+                      <td bgcolor="#5e68c6" style="padding:2px 2px 2px 2px; border-radius:6px;">
+                        <table cellpadding="0" cellspacing="0" border="0">
+                          <tr>
+                            <td bgcolor="#ffb70c" style="padding:2px 2px 2px 2px; border-radius:4px;">
+                              <table cellpadding="0" cellspacing="0" border="0" width="300">
+                                <tr>
+                                  <td align="center" valign="middle" height="42" bgcolor="#ff98b3" style="font-family:Helvetica, Arial, sans-serif; font-size:18px; mso-line-height-rule:exactly; line-height:22px; color:#5e68c6; padding:0 0 0 0; border-radius:2px;"><strong><label for="KOD" style="color:#5e68c6; text-decoration:none; display:block; padding:10px 10px 10px 10px;">UPDATE YOUR SELECTIONS</label></strong></td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+            <table class="V9" cellpadding="0" cellspacing="0" border="0" width="100%" style="display:none;">
+              <tr>
+                <td align="center" valign="top" style="padding:0 10px 0 10px;">
+                  <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                    <tr>
+                      <td align="center" valign="top" style="font-family:Helvetica, Arial, sans-serif; font-size:12px; mso-line-height-rule:exactly; line-height:16px; color:#3a3a3a; padding:20px 20px 20px 20px;">
+                        <webversion target="_blank" style="color:#3a3a3a; text-decoration:underline;">Scan Online</webversion>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td bgcolor="#86878b" background="http://tabletrtd.com/codepen/DD-talk-07.jpg" width="500" height="250" align="center" valign="bottom" style="font-family:'Libre Franklin', Helvetica, Arial, sans-serif; font-size:30px; mso-line-height-rule:exactly; line-height:34px; color:#ffffff; padding:0 0 0 0; background-size:100% auto; border-radius:10px;">
+                        <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                          <tr>
+                            <td align="center" valign="top" style="padding:0 0 20px 0;">
+                              <table cellpadding="0" cellspacing="0" border="0">
+                                <tr>
+                                  <td bgcolor="#ffb70c" align="center" valign="middle" style="font-family:'Libre Franklin', Helvetica, Arial, sans-serif; font-size:30px; mso-line-height-rule:exactly; line-height:34px; color:#5e68c6; padding:10px 20px 10px 20px; border-radius:10px;"><strong>Welcome</strong></td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td align="center" valign="top"><img src="http://tabletrtd.com/codepen/DD-talk-10.png" alt="" width="100%" height="30" border="0" style="display:block;"></td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td align="center" valign="top" style="font-family:Helvetica, Arial, sans-serif; font-size:14px; mso-line-height-rule:exactly; line-height:20px; color:#3a3a3a; padding:20px 20px 20px 20px;">Is this the real life? Or is this just&nbsp;fantasy?</td>
+                    </tr>
+                    <tr>
+                      <td align="center" valign="top" style="padding:0 0 20px 0;">
+                        <table cellpadding="0" cellspacing="0" border="0">
+                          <tr>
+                            <td bgcolor="#5e68c6" style="padding:2px 2px 2px 2px; border-radius:12px;">
+                              <table cellpadding="0" cellspacing="0" border="0">
+                                <tr>
+                                  <td bgcolor="#ffb70c" style="padding:2px 2px 2px 2px; border-radius:10px;">
+                                    <table cellpadding="0" cellspacing="0" border="0" width="300">
+                                      <tr>
+                                        <td align="center" valign="middle" height="42" bgcolor="#ff98b3" style="font-family:Helvetica, Arial, sans-serif; font-size:18px; mso-line-height-rule:exactly; line-height:22px; color:#5e68c6; padding:0 0 0 0; border-radius:8px;"><strong><label for="KOD" style="color:#5e68c6; text-decoration:none; display:block; padding:10px 10px 10px 10px;">UPDATE YOUR SELECTIONS</label></strong></td>
+                                      </tr>
+                                    </table>
+                                  </td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+            <table class="V10 widthFull" cellpadding="0" cellspacing="0" border="0" width="500" style="display:none;">
+              <tr>
+                <td align="center" valign="top" style="font-family:Helvetica, Arial, sans-serif; font-size:12px; mso-line-height-rule:exactly; line-height:16px; color:#3a3a3a; padding:20px 20px 20px 20px;">
+                  <webversion target="_blank" style="color:#3a3a3a; text-decoration:underline;">Observe Online</webversion>
+                </td>
+              </tr>
+              <tr>
+                <td bgcolor="#c77665" background="http://tabletrtd.com/codepen/DD-talk-08.jpg" width="500" height="250" align="center" valign="bottom" style="font-family:'Libre Franklin', Helvetica, Arial, sans-serif; font-size:30px; mso-line-height-rule:exactly; line-height:34px; color:#ffffff; padding:0 0 0 0; background-size:100% auto; border-radius:0;">
+                  <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                    <tr>
+                      <td align="center" valign="top" style="padding:0 0 20px 0;">
+                        <table cellpadding="0" cellspacing="0" border="0">
+                          <tr>
+                            <td bgcolor="#ffffff" align="center" valign="middle" style="font-family:'Libre Franklin', Helvetica, Arial, sans-serif; font-size:30px; mso-line-height-rule:exactly; line-height:34px; color:#3a3a3a; padding:10px 20px 10px 20px; border-radius:0;"><strong>Hey Friend</strong></td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr>
+                <td align="center" valign="top" style="font-family:Helvetica, Arial, sans-serif; font-size:14px; mso-line-height-rule:exactly; line-height:20px; color:#3a3a3a; padding:20px 20px 20px 20px;">You are appreciated. Go forth and conquer&nbsp;life.</td>
+              </tr>
+              <tr>
+                <td align="center" valign="top" style="padding:0 0 20px 0;">
+                  <table cellpadding="0" cellspacing="0" border="0">
+                    <tr>
+                      <td bgcolor="#ffffff" style="padding:2px 2px 2px 2px; border-radius:0;">
+                        <table cellpadding="0" cellspacing="0" border="0">
+                          <tr>
+                            <td bgcolor="#3a3a3a" style="padding:2px 2px 2px 2px; border-radius:0;">
+                              <table cellpadding="0" cellspacing="0" border="0" width="300">
+                                <tr>
+                                  <td align="center" valign="middle" height="42" bgcolor="#ffffff" style="font-family:Helvetica, Arial, sans-serif; font-size:18px; mso-line-height-rule:exactly; line-height:22px; color:#3a3a3a; padding:0 0 0 0; border-radius:0;"><strong><label for="KOD" style="color:#3a3a3a; text-decoration:none; display:block; padding:10px 10px 10px 10px;">UPDATE YOUR SELECTIONS</label></strong></td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+            <table class="V11" cellpadding="0" cellspacing="0" border="0" width="100%" style="display:none;">
+              <tr>
+                <td align="center" valign="top" style="font-family:Helvetica, Arial, sans-serif; font-size:12px; mso-line-height-rule:exactly; line-height:16px; color:#3a3a3a; padding:20px 20px 20px 20px;">
+                  <webversion target="_blank" style="color:#3a3a3a; text-decoration:underline;">Observe Online</webversion>
+                </td>
+              </tr>
+              <tr>
+                <td bgcolor="#c77665" background="http://tabletrtd.com/codepen/DD-talk-08.jpg" width="500" height="250" align="center" valign="bottom" style="font-family:'Libre Franklin', Helvetica, Arial, sans-serif; font-size:30px; mso-line-height-rule:exactly; line-height:34px; color:#ffffff; padding:0 0 0 0; background-size:100% auto; border-radius:2px;">
+                  <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                    <tr>
+                      <td align="center" valign="top" style="padding:0 0 20px 0;">
+                        <table cellpadding="0" cellspacing="0" border="0">
+                          <tr>
+                            <td bgcolor="#ffffff" align="center" valign="middle" style="font-family:'Libre Franklin', Helvetica, Arial, sans-serif; font-size:30px; mso-line-height-rule:exactly; line-height:34px; color:#3a3a3a; padding:10px 20px 10px 20px; border-radius:2px;"><strong>Hey Friend</strong></td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td align="center" valign="top"><img src="http://tabletrtd.com/codepen/DD-talk-11.png" alt="" width="100%" height="30" border="0" style="display:block;"></td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr>
+                <td align="center" valign="top" style="font-family:Helvetica, Arial, sans-serif; font-size:14px; mso-line-height-rule:exactly; line-height:20px; color:#3a3a3a; padding:20px 20px 20px 20px;">You are appreciated. Go forth and conquer&nbsp;life.</td>
+              </tr>
+              <tr>
+                <td align="center" valign="top" style="padding:0 0 20px 0;">
+                  <table cellpadding="0" cellspacing="0" border="0">
+                    <tr>
+                      <td bgcolor="#ffffff" style="padding:2px 2px 2px 2px; border-radius:6px;">
+                        <table cellpadding="0" cellspacing="0" border="0">
+                          <tr>
+                            <td bgcolor="#3a3a3a" style="padding:2px 2px 2px 2px; border-radius:4px;">
+                              <table cellpadding="0" cellspacing="0" border="0" width="300">
+                                <tr>
+                                  <td align="center" valign="middle" height="42" bgcolor="#ffffff" style="font-family:Helvetica, Arial, sans-serif; font-size:18px; mso-line-height-rule:exactly; line-height:22px; color:#3a3a3a; padding:0 0 0 0; border-radius:2px;"><strong><label for="KOD" style="color:#3a3a3a; text-decoration:none; display:block; padding:10px 10px 10px 10px;">UPDATE YOUR SELECTIONS</label></strong></td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+            <table class="V12" cellpadding="0" cellspacing="0" border="0" width="100%" style="display:none;">
+              <tr>
+                <td align="center" valign="top" style="padding:0 10px 0 10px;">
+                  <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                    <tr>
+                      <td align="center" valign="top" style="font-family:Helvetica, Arial, sans-serif; font-size:12px; mso-line-height-rule:exactly; line-height:16px; color:#3a3a3a; padding:20px 20px 20px 20px;">
+                        <webversion target="_blank" style="color:#3a3a3a; text-decoration:underline;">Observe Online</webversion>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td bgcolor="#c77665" background="http://tabletrtd.com/codepen/DD-talk-08.jpg" width="500" height="250" align="center" valign="bottom" style="font-family:'Libre Franklin', Helvetica, Arial, sans-serif; font-size:30px; mso-line-height-rule:exactly; line-height:34px; color:#ffffff; padding:0 0 0 0; background-size:100% auto; border-radius:10px;">
+                        <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                          <tr>
+                            <td align="center" valign="top" style="padding:0 0 20px 0;">
+                              <table cellpadding="0" cellspacing="0" border="0">
+                                <tr>
+                                  <td bgcolor="#ffffff" align="center" valign="middle" style="font-family:'Libre Franklin', Helvetica, Arial, sans-serif; font-size:30px; mso-line-height-rule:exactly; line-height:34px; color:#3a3a3a; padding:10px 20px 10px 20px; border-radius:10px;"><strong>Hey Friend</strong></td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td align="center" valign="top"><img src="http://tabletrtd.com/codepen/DD-talk-10.png" alt="" width="100%" height="30" border="0" style="display:block;"></td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td align="center" valign="top" style="font-family:Helvetica, Arial, sans-serif; font-size:14px; mso-line-height-rule:exactly; line-height:20px; color:#3a3a3a; padding:20px 20px 20px 20px;">You are appreciated. Go forth and conquer&nbsp;life.</td>
+                    </tr>
+                    <tr>
+                      <td align="center" valign="top" style="padding:0 0 20px 0;">
+                        <table cellpadding="0" cellspacing="0" border="0">
+                          <tr>
+                            <td bgcolor="#ffffff" style="padding:2px 2px 2px 2px; border-radius:12px;">
+                              <table cellpadding="0" cellspacing="0" border="0">
+                                <tr>
+                                  <td bgcolor="#3a3a3a" style="padding:2px 2px 2px 2px; border-radius:10px;">
+                                    <table cellpadding="0" cellspacing="0" border="0" width="300">
+                                      <tr>
+                                        <td align="center" valign="middle" height="42" bgcolor="#ffffff" style="font-family:Helvetica, Arial, sans-serif; font-size:18px; mso-line-height-rule:exactly; line-height:22px; color:#3a3a3a; padding:0 0 0 0; border-radius:8px;"><strong><label for="KOD" style="color:#3a3a3a; text-decoration:none; display:block; padding:10px 10px 10px 10px;">UPDATE YOUR SELECTIONS</label></strong></td>
+                                      </tr>
+                                    </table>
+                                  </td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+            <table class="V13 widthFull" cellpadding="0" cellspacing="0" border="0" width="500" style="display:none;">
+              <tr>
+                <td align="center" valign="top" style="font-family:Helvetica, Arial, sans-serif; font-size:12px; mso-line-height-rule:exactly; line-height:16px; color:#3a3a3a; padding:20px 20px 20px 20px;">
+                  <webversion target="_blank" style="color:#3a3a3a; text-decoration:underline;">Observe Online</webversion>
+                </td>
+              </tr>
+              <tr>
+                <td bgcolor="#c77665" background="http://tabletrtd.com/codepen/DD-talk-08.jpg" width="500" height="250" align="center" valign="bottom" style="font-family:'Libre Franklin', Helvetica, Arial, sans-serif; font-size:30px; mso-line-height-rule:exactly; line-height:34px; color:#ffffff; padding:0 0 0 0; background-size:100% auto; border-radius:0;">
+                  <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                    <tr>
+                      <td align="center" valign="top" style="padding:0 0 20px 0;">
+                        <table cellpadding="0" cellspacing="0" border="0">
+                          <tr>
+                            <td bgcolor="#eadac7" align="center" valign="middle" style="font-family:'Libre Franklin', Helvetica, Arial, sans-serif; font-size:30px; mso-line-height-rule:exactly; line-height:34px; color:#489f87; padding:10px 20px 10px 20px; border-radius:0;"><strong>Hey Friend</strong></td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr>
+                <td align="center" valign="top" style="font-family:Helvetica, Arial, sans-serif; font-size:14px; mso-line-height-rule:exactly; line-height:20px; color:#3a3a3a; padding:20px 20px 20px 20px;">You are appreciated. Go forth and conquer&nbsp;life.</td>
+              </tr>
+              <tr>
+                <td align="center" valign="top" style="padding:0 0 20px 0;">
+                  <table cellpadding="0" cellspacing="0" border="0">
+                    <tr>
+                      <td bgcolor="#ffffff" style="padding:2px 2px 2px 2px; border-radius:0;">
+                        <table cellpadding="0" cellspacing="0" border="0">
+                          <tr>
+                            <td bgcolor="#489f87" style="padding:2px 2px 2px 2px; border-radius:0;">
+                              <table cellpadding="0" cellspacing="0" border="0" width="300">
+                                <tr>
+                                  <td align="center" valign="middle" height="42" bgcolor="#ffffff" style="font-family:Helvetica, Arial, sans-serif; font-size:18px; mso-line-height-rule:exactly; line-height:22px; color:#489f87; padding:0 0 0 0; border-radius:0;"><strong><label for="KOD" style="color:#489f87; text-decoration:none; display:block; padding:10px 10px 10px 10px;">UPDATE YOUR SELECTIONS</label></strong></td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+            <table class="V14" cellpadding="0" cellspacing="0" border="0" width="100%" style="display:none;">
+              <tr>
+                <td align="center" valign="top" style="font-family:Helvetica, Arial, sans-serif; font-size:12px; mso-line-height-rule:exactly; line-height:16px; color:#3a3a3a; padding:20px 20px 20px 20px;">
+                  <webversion target="_blank" style="color:#3a3a3a; text-decoration:underline;">Observe Online</webversion>
+                </td>
+              </tr>
+              <tr>
+                <td bgcolor="#c77665" background="http://tabletrtd.com/codepen/DD-talk-08.jpg" width="500" height="250" align="center" valign="bottom" style="font-family:'Libre Franklin', Helvetica, Arial, sans-serif; font-size:30px; mso-line-height-rule:exactly; line-height:34px; color:#ffffff; padding:0 0 0 0; background-size:100% auto; border-radius:2px;">
+                  <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                    <tr>
+                      <td align="center" valign="top" style="padding:0 0 20px 0;">
+                        <table cellpadding="0" cellspacing="0" border="0">
+                          <tr>
+                            <td bgcolor="#eadac7" align="center" valign="middle" style="font-family:'Libre Franklin', Helvetica, Arial, sans-serif; font-size:30px; mso-line-height-rule:exactly; line-height:34px; color:#489f87; padding:10px 20px 10px 20px; border-radius:2px;"><strong>Hey Friend</strong></td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td align="center" valign="top"><img src="http://tabletrtd.com/codepen/DD-talk-11.png" alt="" width="100%" height="30" border="0" style="display:block;"></td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr>
+                <td align="center" valign="top" style="font-family:Helvetica, Arial, sans-serif; font-size:14px; mso-line-height-rule:exactly; line-height:20px; color:#3a3a3a; padding:20px 20px 20px 20px;">You are appreciated. Go forth and conquer&nbsp;life.</td>
+              </tr>
+              <tr>
+                <td align="center" valign="top" style="padding:0 0 20px 0;">
+                  <table cellpadding="0" cellspacing="0" border="0">
+                    <tr>
+                      <td bgcolor="#ffffff" style="padding:2px 2px 2px 2px; border-radius:6px;">
+                        <table cellpadding="0" cellspacing="0" border="0">
+                          <tr>
+                            <td bgcolor="#489f87" style="padding:2px 2px 2px 2px; border-radius:4px;">
+                              <table cellpadding="0" cellspacing="0" border="0" width="300">
+                                <tr>
+                                  <td align="center" valign="middle" height="42" bgcolor="#ffffff" style="font-family:Helvetica, Arial, sans-serif; font-size:18px; mso-line-height-rule:exactly; line-height:22px; color:#489f87; padding:0 0 0 0; border-radius:2px;"><strong><label for="KOD" style="color:#489f87; text-decoration:none; display:block; padding:10px 10px 10px 10px;">UPDATE YOUR SELECTIONS</label></strong></td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+            <table class="V15" cellpadding="0" cellspacing="0" border="0" width="100%" style="display:none;">
+              <tr>
+                <td align="center" valign="top" style="padding:0 10px 0 10px;">
+                  <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                    <tr>
+                      <td align="center" valign="top" style="font-family:Helvetica, Arial, sans-serif; font-size:12px; mso-line-height-rule:exactly; line-height:16px; color:#3a3a3a; padding:20px 20px 20px 20px;">
+                        <webversion target="_blank" style="color:#3a3a3a; text-decoration:underline;">Observe Online</webversion>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td bgcolor="#c77665" background="http://tabletrtd.com/codepen/DD-talk-08.jpg" width="500" height="250" align="center" valign="bottom" style="font-family:'Libre Franklin', Helvetica, Arial, sans-serif; font-size:30px; mso-line-height-rule:exactly; line-height:34px; color:#ffffff; padding:0 0 0 0; background-size:100% auto; border-radius:10px;">
+                        <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                          <tr>
+                            <td align="center" valign="top" style="padding:0 0 20px 0;">
+                              <table cellpadding="0" cellspacing="0" border="0">
+                                <tr>
+                                  <td bgcolor="#eadac7" align="center" valign="middle" style="font-family:'Libre Franklin', Helvetica, Arial, sans-serif; font-size:30px; mso-line-height-rule:exactly; line-height:34px; color:#489f87; padding:10px 20px 10px 20px; border-radius:10px;"><strong>Hey Friend</strong></td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td align="center" valign="top"><img src="http://tabletrtd.com/codepen/DD-talk-10.png" alt="" width="100%" height="30" border="0" style="display:block;"></td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td align="center" valign="top" style="font-family:Helvetica, Arial, sans-serif; font-size:14px; mso-line-height-rule:exactly; line-height:20px; color:#3a3a3a; padding:20px 20px 20px 20px;">You are appreciated. Go forth and conquer&nbsp;life.</td>
+                    </tr>
+                    <tr>
+                      <td align="center" valign="top" style="padding:0 0 20px 0;">
+                        <table cellpadding="0" cellspacing="0" border="0">
+                          <tr>
+                            <td bgcolor="#ffffff" style="padding:2px 2px 2px 2px; border-radius:12px;">
+                              <table cellpadding="0" cellspacing="0" border="0">
+                                <tr>
+                                  <td bgcolor="#489f87" style="padding:2px 2px 2px 2px; border-radius:10px;">
+                                    <table cellpadding="0" cellspacing="0" border="0" width="300">
+                                      <tr>
+                                        <td align="center" valign="middle" height="42" bgcolor="#ffffff" style="font-family:Helvetica, Arial, sans-serif; font-size:18px; mso-line-height-rule:exactly; line-height:22px; color:#489f87; padding:0 0 0 0; border-radius:8px;"><strong><label for="KOD" style="color:#489f87; text-decoration:none; display:block; padding:10px 10px 10px 10px;">UPDATE YOUR SELECTIONS</label></strong></td>
+                                      </tr>
+                                    </table>
+                                  </td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+            <table class="V16 widthFull" cellpadding="0" cellspacing="0" border="0" width="500" style="display:none;">
+              <tr>
+                <td align="center" valign="top" style="font-family:Helvetica, Arial, sans-serif; font-size:12px; mso-line-height-rule:exactly; line-height:16px; color:#3a3a3a; padding:20px 20px 20px 20px;">
+                  <webversion target="_blank" style="color:#3a3a3a; text-decoration:underline;">Observe Online</webversion>
+                </td>
+              </tr>
+              <tr>
+                <td bgcolor="#c77665" background="http://tabletrtd.com/codepen/DD-talk-08.jpg" width="500" height="250" align="center" valign="bottom" style="font-family:'Libre Franklin', Helvetica, Arial, sans-serif; font-size:30px; mso-line-height-rule:exactly; line-height:34px; color:#ffffff; padding:0 0 0 0; background-size:100% auto; border-radius:0;">
+                  <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                    <tr>
+                      <td align="center" valign="top" style="padding:0 0 20px 0;">
+                        <table cellpadding="0" cellspacing="0" border="0">
+                          <tr>
+                            <td bgcolor="#ffb70c" align="center" valign="middle" style="font-family:'Libre Franklin', Helvetica, Arial, sans-serif; font-size:30px; mso-line-height-rule:exactly; line-height:34px; color:#5e68c6; padding:10px 20px 10px 20px; border-radius:0;"><strong>Hey Friend</strong></td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr>
+                <td align="center" valign="top" style="font-family:Helvetica, Arial, sans-serif; font-size:14px; mso-line-height-rule:exactly; line-height:20px; color:#3a3a3a; padding:20px 20px 20px 20px;">You are appreciated. Go forth and conquer&nbsp;life.</td>
+              </tr>
+              <tr>
+                <td align="center" valign="top" style="padding:0 0 20px 0;">
+                  <table cellpadding="0" cellspacing="0" border="0">
+                    <tr>
+                      <td bgcolor="#5e68c6" style="padding:2px 2px 2px 2px; border-radius:0;">
+                        <table cellpadding="0" cellspacing="0" border="0">
+                          <tr>
+                            <td bgcolor="#ffb70c" style="padding:2px 2px 2px 2px; border-radius:0;">
+                              <table cellpadding="0" cellspacing="0" border="0" width="300">
+                                <tr>
+                                  <td align="center" valign="middle" height="42" bgcolor="#ff98b3" style="font-family:Helvetica, Arial, sans-serif; font-size:18px; mso-line-height-rule:exactly; line-height:22px; color:#5e68c6; padding:0 0 0 0; border-radius:0;"><strong><label for="KOD" style="color:#5e68c6; text-decoration:none; display:block; padding:10px 10px 10px 10px;">UPDATE YOUR SELECTIONS</label></strong></td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+            <table class="V17" cellpadding="0" cellspacing="0" border="0" width="100%" style="display:none;">
+              <tr>
+                <td align="center" valign="top" style="font-family:Helvetica, Arial, sans-serif; font-size:12px; mso-line-height-rule:exactly; line-height:16px; color:#3a3a3a; padding:20px 20px 20px 20px;">
+                  <webversion target="_blank" style="color:#3a3a3a; text-decoration:underline;">Observe Online</webversion>
+                </td>
+              </tr>
+              <tr>
+                <td bgcolor="#c77665" background="http://tabletrtd.com/codepen/DD-talk-08.jpg" width="500" height="250" align="center" valign="bottom" style="font-family:'Libre Franklin', Helvetica, Arial, sans-serif; font-size:30px; mso-line-height-rule:exactly; line-height:34px; color:#ffffff; padding:0 0 0 0; background-size:100% auto; border-radius:2px;">
+                  <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                    <tr>
+                      <td align="center" valign="top" style="padding:0 0 20px 0;">
+                        <table cellpadding="0" cellspacing="0" border="0">
+                          <tr>
+                            <td bgcolor="#ffb70c" align="center" valign="middle" style="font-family:'Libre Franklin', Helvetica, Arial, sans-serif; font-size:30px; mso-line-height-rule:exactly; line-height:34px; color:#5e68c6; padding:10px 20px 10px 20px; border-radius:2px;"><strong>Hey Friend</strong></td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td align="center" valign="top"><img src="http://tabletrtd.com/codepen/DD-talk-11.png" alt="" width="100%" height="30" border="0" style="display:block;"></td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr>
+                <td align="center" valign="top" style="font-family:Helvetica, Arial, sans-serif; font-size:14px; mso-line-height-rule:exactly; line-height:20px; color:#3a3a3a; padding:20px 20px 20px 20px;">You are appreciated. Go forth and conquer&nbsp;life.</td>
+              </tr>
+              <tr>
+                <td align="center" valign="top" style="padding:0 0 20px 0;">
+                  <table cellpadding="0" cellspacing="0" border="0">
+                    <tr>
+                      <td bgcolor="#5e68c6" style="padding:2px 2px 2px 2px; border-radius:6px;">
+                        <table cellpadding="0" cellspacing="0" border="0">
+                          <tr>
+                            <td bgcolor="#ffb70c" style="padding:2px 2px 2px 2px; border-radius:4px;">
+                              <table cellpadding="0" cellspacing="0" border="0" width="300">
+                                <tr>
+                                  <td align="center" valign="middle" height="42" bgcolor="#ff98b3" style="font-family:Helvetica, Arial, sans-serif; font-size:18px; mso-line-height-rule:exactly; line-height:22px; color:#5e68c6; padding:0 0 0 0; border-radius:2px;"><strong><label for="KOD" style="color:#5e68c6; text-decoration:none; display:block; padding:10px 10px 10px 10px;">UPDATE YOUR SELECTIONS</label></strong></td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+            <table class="V18" cellpadding="0" cellspacing="0" border="0" width="100%" style="display:none;">
+              <tr>
+                <td align="center" valign="top" style="padding:0 10px 0 10px;">
+                  <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                    <tr>
+                      <td align="center" valign="top" style="font-family:Helvetica, Arial, sans-serif; font-size:12px; mso-line-height-rule:exactly; line-height:16px; color:#3a3a3a; padding:20px 20px 20px 20px;">
+                        <webversion target="_blank" style="color:#3a3a3a; text-decoration:underline;">Observe Online</webversion>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td bgcolor="#c77665" background="http://tabletrtd.com/codepen/DD-talk-08.jpg" width="500" height="250" align="center" valign="bottom" style="font-family:'Libre Franklin', Helvetica, Arial, sans-serif; font-size:30px; mso-line-height-rule:exactly; line-height:34px; color:#ffffff; padding:0 0 0 0; background-size:100% auto; border-radius:10px;">
+                        <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                          <tr>
+                            <td align="center" valign="top" style="padding:0 0 20px 0;">
+                              <table cellpadding="0" cellspacing="0" border="0">
+                                <tr>
+                                  <td bgcolor="#ffb70c" align="center" valign="middle" style="font-family:'Libre Franklin', Helvetica, Arial, sans-serif; font-size:30px; mso-line-height-rule:exactly; line-height:34px; color:#5e68c6; padding:10px 20px 10px 20px; border-radius:10px;"><strong>Hey Friend</strong></td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td align="center" valign="top"><img src="http://tabletrtd.com/codepen/DD-talk-10.png" alt="" width="100%" height="30" border="0" style="display:block;"></td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td align="center" valign="top" style="font-family:Helvetica, Arial, sans-serif; font-size:14px; mso-line-height-rule:exactly; line-height:20px; color:#3a3a3a; padding:20px 20px 20px 20px;">You are appreciated. Go forth and conquer&nbsp;life.</td>
+                    </tr>
+                    <tr>
+                      <td align="center" valign="top" style="padding:0 0 20px 0;">
+                        <table cellpadding="0" cellspacing="0" border="0">
+                          <tr>
+                            <td bgcolor="#5e68c6" style="padding:2px 2px 2px 2px; border-radius:12px;">
+                              <table cellpadding="0" cellspacing="0" border="0">
+                                <tr>
+                                  <td bgcolor="#ffb70c" style="padding:2px 2px 2px 2px; border-radius:10px;">
+                                    <table cellpadding="0" cellspacing="0" border="0" width="300">
+                                      <tr>
+                                        <td align="center" valign="middle" height="42" bgcolor="#ff98b3" style="font-family:Helvetica, Arial, sans-serif; font-size:18px; mso-line-height-rule:exactly; line-height:22px; color:#5e68c6; padding:0 0 0 0; border-radius:8px;"><strong><label for="KOD" style="color:#5e68c6; text-decoration:none; display:block; padding:10px 10px 10px 10px;">UPDATE YOUR SELECTIONS</label></strong></td>
+                                      </tr>
+                                    </table>
+                                  </td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+            <table class="V19 widthFull" cellpadding="0" cellspacing="0" border="0" width="500" style="display:none;">
+              <tr>
+                <td align="center" valign="top" style="font-family:Helvetica, Arial, sans-serif; font-size:12px; mso-line-height-rule:exactly; line-height:16px; color:#3a3a3a; padding:20px 20px 20px 20px;">
+                  <webversion target="_blank" style="color:#3a3a3a; text-decoration:underline;">Behold Online</webversion>
+                </td>
+              </tr>
+              <tr>
+                <td bgcolor="#5561b7" background="http://tabletrtd.com/codepen/DD-talk-09.jpg" width="500" height="250" align="center" valign="bottom" style="font-family:'Libre Franklin', Helvetica, Arial, sans-serif; font-size:30px; mso-line-height-rule:exactly; line-height:34px; color:#ffffff; padding:0 0 0 0; background-size:100% auto; border-radius:0;">
+                  <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                    <tr>
+                      <td align="center" valign="top" style="padding:0 0 20px 0;">
+                        <table cellpadding="0" cellspacing="0" border="0">
+                          <tr>
+                            <td bgcolor="#ffffff" align="center" valign="middle" style="font-family:'Libre Franklin', Helvetica, Arial, sans-serif; font-size:30px; mso-line-height-rule:exactly; line-height:34px; color:#3a3a3a; padding:10px 20px 10px 20px; border-radius:0;"><strong>This is for You</strong></td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr>
+                <td align="center" valign="top" style="font-family:Helvetica, Arial, sans-serif; font-size:14px; mso-line-height-rule:exactly; line-height:20px; color:#3a3a3a; padding:20px 20px 20px 20px;">You rule, and always will. Just keep on keeping on. If you put one foot in front of the other, you'll walk&nbsp;somewhere.</td>
+              </tr>
+              <tr>
+                <td align="center" valign="top" style="padding:0 0 20px 0;">
+                  <table cellpadding="0" cellspacing="0" border="0">
+                    <tr>
+                      <td bgcolor="#ffffff" style="padding:2px 2px 2px 2px; border-radius:0;">
+                        <table cellpadding="0" cellspacing="0" border="0">
+                          <tr>
+                            <td bgcolor="#3a3a3a" style="padding:2px 2px 2px 2px; border-radius:0;">
+                              <table cellpadding="0" cellspacing="0" border="0" width="300">
+                                <tr>
+                                  <td align="center" valign="middle" height="42" bgcolor="#ffffff" style="font-family:Helvetica, Arial, sans-serif; font-size:18px; mso-line-height-rule:exactly; line-height:22px; color:#3a3a3a; padding:0 0 0 0; border-radius:0;"><strong><label for="KOD" style="color:#3a3a3a; text-decoration:none; display:block; padding:10px 10px 10px 10px;">UPDATE YOUR SELECTIONS</label></strong></td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+            <table class="V20" cellpadding="0" cellspacing="0" border="0" width="100%" style="display:none;">
+              <tr>
+                <td align="center" valign="top" style="font-family:Helvetica, Arial, sans-serif; font-size:12px; mso-line-height-rule:exactly; line-height:16px; color:#3a3a3a; padding:20px 20px 20px 20px;">
+                  <webversion target="_blank" style="color:#3a3a3a; text-decoration:underline;">Behold Online</webversion>
+                </td>
+              </tr>
+              <tr>
+                <td bgcolor="#5561b7" background="http://tabletrtd.com/codepen/DD-talk-09.jpg" width="500" height="250" align="center" valign="bottom" style="font-family:'Libre Franklin', Helvetica, Arial, sans-serif; font-size:30px; mso-line-height-rule:exactly; line-height:34px; color:#ffffff; padding:0 0 0 0; background-size:100% auto; border-radius:2px;">
+                  <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                    <tr>
+                      <td align="center" valign="top" style="padding:0 0 20px 0;">
+                        <table cellpadding="0" cellspacing="0" border="0">
+                          <tr>
+                            <td bgcolor="#ffffff" align="center" valign="middle" style="font-family:'Libre Franklin', Helvetica, Arial, sans-serif; font-size:30px; mso-line-height-rule:exactly; line-height:34px; color:#3a3a3a; padding:10px 20px 10px 20px; border-radius:2px;"><strong>This is for You</strong></td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td align="center" valign="top"><img src="http://tabletrtd.com/codepen/DD-talk-11.png" alt="" width="100%" height="30" border="0" style="display:block;"></td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr>
+                <td align="center" valign="top" style="font-family:Helvetica, Arial, sans-serif; font-size:14px; mso-line-height-rule:exactly; line-height:20px; color:#3a3a3a; padding:20px 20px 20px 20px;">You rule, and always will. Just keep on keeping on. If you put one foot in front of the other, you'll walk&nbsp;somewhere.</td>
+              </tr>
+              <tr>
+                <td align="center" valign="top" style="padding:0 0 20px 0;">
+                  <table cellpadding="0" cellspacing="0" border="0">
+                    <tr>
+                      <td bgcolor="#ffffff" style="padding:2px 2px 2px 2px; border-radius:6px;">
+                        <table cellpadding="0" cellspacing="0" border="0">
+                          <tr>
+                            <td bgcolor="#3a3a3a" style="padding:2px 2px 2px 2px; border-radius:4px;">
+                              <table cellpadding="0" cellspacing="0" border="0" width="300">
+                                <tr>
+                                  <td align="center" valign="middle" height="42" bgcolor="#ffffff" style="font-family:Helvetica, Arial, sans-serif; font-size:18px; mso-line-height-rule:exactly; line-height:22px; color:#3a3a3a; padding:0 0 0 0; border-radius:2px;"><strong><label for="KOD" style="color:#3a3a3a; text-decoration:none; display:block; padding:10px 10px 10px 10px;">UPDATE YOUR SELECTIONS</label></strong></td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+            <table class="V21" cellpadding="0" cellspacing="0" border="0" width="100%" style="display:none;">
+              <tr>
+                <td align="center" valign="top" style="padding:0 10px 0 10px;">
+                  <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                    <tr>
+                      <td align="center" valign="top" style="font-family:Helvetica, Arial, sans-serif; font-size:12px; mso-line-height-rule:exactly; line-height:16px; color:#3a3a3a; padding:20px 20px 20px 20px;">
+                        <webversion target="_blank" style="color:#3a3a3a; text-decoration:underline;">Behold Online</webversion>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td bgcolor="#5561b7" background="http://tabletrtd.com/codepen/DD-talk-09.jpg" width="500" height="250" align="center" valign="bottom" style="font-family:'Libre Franklin', Helvetica, Arial, sans-serif; font-size:30px; mso-line-height-rule:exactly; line-height:34px; color:#ffffff; padding:0 0 0 0; background-size:100% auto; border-radius:10px;">
+                        <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                          <tr>
+                            <td align="center" valign="top" style="padding:0 0 20px 0;">
+                              <table cellpadding="0" cellspacing="0" border="0">
+                                <tr>
+                                  <td bgcolor="#ffffff" align="center" valign="middle" style="font-family:'Libre Franklin', Helvetica, Arial, sans-serif; font-size:30px; mso-line-height-rule:exactly; line-height:34px; color:#3a3a3a; padding:10px 20px 10px 20px; border-radius:10px;"><strong>This is for You</strong></td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td align="center" valign="top"><img src="http://tabletrtd.com/codepen/DD-talk-10.png" alt="" width="100%" height="30" border="0" style="display:block;"></td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td align="center" valign="top" style="font-family:Helvetica, Arial, sans-serif; font-size:14px; mso-line-height-rule:exactly; line-height:20px; color:#3a3a3a; padding:20px 20px 20px 20px;">You rule, and always will. Just keep on keeping on. If you put one foot in front of the other, you'll walk&nbsp;somewhere.</td>
+                    </tr>
+                    <tr>
+                      <td align="center" valign="top" style="padding:0 0 20px 0;">
+                        <table cellpadding="0" cellspacing="0" border="0">
+                          <tr>
+                            <td bgcolor="#ffffff" style="padding:2px 2px 2px 2px; border-radius:12px;">
+                              <table cellpadding="0" cellspacing="0" border="0">
+                                <tr>
+                                  <td bgcolor="#3a3a3a" style="padding:2px 2px 2px 2px; border-radius:10px;">
+                                    <table cellpadding="0" cellspacing="0" border="0" width="300">
+                                      <tr>
+                                        <td align="center" valign="middle" height="42" bgcolor="#ffffff" style="font-family:Helvetica, Arial, sans-serif; font-size:18px; mso-line-height-rule:exactly; line-height:22px; color:#3a3a3a; padding:0 0 0 0; border-radius:8px;"><strong><label for="KOD" style="color:#3a3a3a; text-decoration:none; display:block; padding:10px 10px 10px 10px;">UPDATE YOUR SELECTIONS</label></strong></td>
+                                      </tr>
+                                    </table>
+                                  </td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+            <table class="V22 widthFull" cellpadding="0" cellspacing="0" border="0" width="500" style="display:none;">
+              <tr>
+                <td align="center" valign="top" style="font-family:Helvetica, Arial, sans-serif; font-size:12px; mso-line-height-rule:exactly; line-height:16px; color:#3a3a3a; padding:20px 20px 20px 20px;">
+                  <webversion target="_blank" style="color:#3a3a3a; text-decoration:underline;">Behold Online</webversion>
+                </td>
+              </tr>
+              <tr>
+                <td bgcolor="#5561b7" background="http://tabletrtd.com/codepen/DD-talk-09.jpg" width="500" height="250" align="center" valign="bottom" style="font-family:'Libre Franklin', Helvetica, Arial, sans-serif; font-size:30px; mso-line-height-rule:exactly; line-height:34px; color:#ffffff; padding:0 0 0 0; background-size:100% auto; border-radius:0;">
+                  <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                    <tr>
+                      <td align="center" valign="top" style="padding:0 0 20px 0;">
+                        <table cellpadding="0" cellspacing="0" border="0">
+                          <tr>
+                            <td bgcolor="#eadac7" align="center" valign="middle" style="font-family:'Libre Franklin', Helvetica, Arial, sans-serif; font-size:30px; mso-line-height-rule:exactly; line-height:34px; color:#489f87; padding:10px 20px 10px 20px; border-radius:0;"><strong>This is for You</strong></td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr>
+                <td align="center" valign="top" style="font-family:Helvetica, Arial, sans-serif; font-size:14px; mso-line-height-rule:exactly; line-height:20px; color:#3a3a3a; padding:20px 20px 20px 20px;">You rule, and always will. Just keep on keeping on. If you put one foot in front of the other, you'll walk&nbsp;somewhere.</td>
+              </tr>
+              <tr>
+                <td align="center" valign="top" style="padding:0 0 20px 0;">
+                  <table cellpadding="0" cellspacing="0" border="0">
+                    <tr>
+                      <td bgcolor="#ffffff" style="padding:2px 2px 2px 2px; border-radius:0;">
+                        <table cellpadding="0" cellspacing="0" border="0">
+                          <tr>
+                            <td bgcolor="#489f87" style="padding:2px 2px 2px 2px; border-radius:0;">
+                              <table cellpadding="0" cellspacing="0" border="0" width="300">
+                                <tr>
+                                  <td align="center" valign="middle" height="42" bgcolor="#ffffff" style="font-family:Helvetica, Arial, sans-serif; font-size:18px; mso-line-height-rule:exactly; line-height:22px; color:#489f87; padding:0 0 0 0; border-radius:0;"><strong><label for="KOD" style="color:#489f87; text-decoration:none; display:block; padding:10px 10px 10px 10px;">UPDATE YOUR SELECTIONS</label></strong></td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+            <table class="V23" cellpadding="0" cellspacing="0" border="0" width="100%" style="display:none;">
+              <tr>
+                <td align="center" valign="top" style="font-family:Helvetica, Arial, sans-serif; font-size:12px; mso-line-height-rule:exactly; line-height:16px; color:#3a3a3a; padding:20px 20px 20px 20px;">
+                  <webversion target="_blank" style="color:#3a3a3a; text-decoration:underline;">Behold Online</webversion>
+                </td>
+              </tr>
+              <tr>
+                <td bgcolor="#5561b7" background="http://tabletrtd.com/codepen/DD-talk-09.jpg" width="500" height="250" align="center" valign="bottom" style="font-family:'Libre Franklin', Helvetica, Arial, sans-serif; font-size:30px; mso-line-height-rule:exactly; line-height:34px; color:#ffffff; padding:0 0 0 0; background-size:100% auto; border-radius:2px;">
+                  <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                    <tr>
+                      <td align="center" valign="top" style="padding:0 0 20px 0;">
+                        <table cellpadding="0" cellspacing="0" border="0">
+                          <tr>
+                            <td bgcolor="#eadac7" align="center" valign="middle" style="font-family:'Libre Franklin', Helvetica, Arial, sans-serif; font-size:30px; mso-line-height-rule:exactly; line-height:34px; color:#489f87; padding:10px 20px 10px 20px; border-radius:2px;"><strong>This is for You</strong></td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td align="center" valign="top"><img src="http://tabletrtd.com/codepen/DD-talk-11.png" alt="" width="100%" height="30" border="0" style="display:block;"></td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr>
+                <td align="center" valign="top" style="font-family:Helvetica, Arial, sans-serif; font-size:14px; mso-line-height-rule:exactly; line-height:20px; color:#3a3a3a; padding:20px 20px 20px 20px;">You rule, and always will. Just keep on keeping on. If you put one foot in front of the other, you'll walk&nbsp;somewhere.</td>
+              </tr>
+              <tr>
+                <td align="center" valign="top" style="padding:0 0 20px 0;">
+                  <table cellpadding="0" cellspacing="0" border="0">
+                    <tr>
+                      <td bgcolor="#ffffff" style="padding:2px 2px 2px 2px; border-radius:6px;">
+                        <table cellpadding="0" cellspacing="0" border="0">
+                          <tr>
+                            <td bgcolor="#489f87" style="padding:2px 2px 2px 2px; border-radius:4px;">
+                              <table cellpadding="0" cellspacing="0" border="0" width="300">
+                                <tr>
+                                  <td align="center" valign="middle" height="42" bgcolor="#ffffff" style="font-family:Helvetica, Arial, sans-serif; font-size:18px; mso-line-height-rule:exactly; line-height:22px; color:#489f87; padding:0 0 0 0; border-radius:2px;"><strong><label for="KOD" style="color:#489f87; text-decoration:none; display:block; padding:10px 10px 10px 10px;">UPDATE YOUR SELECTIONS</label></strong></td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+            <table class="V24" cellpadding="0" cellspacing="0" border="0" width="100%" style="display:none;">
+              <tr>
+                <td align="center" valign="top" style="padding:0 10px 0 10px;">
+                  <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                    <tr>
+                      <td align="center" valign="top" style="font-family:Helvetica, Arial, sans-serif; font-size:12px; mso-line-height-rule:exactly; line-height:16px; color:#3a3a3a; padding:20px 20px 20px 20px;">
+                        <webversion target="_blank" style="color:#3a3a3a; text-decoration:underline;">Behold Online</webversion>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td bgcolor="#5561b7" background="http://tabletrtd.com/codepen/DD-talk-09.jpg" width="500" height="250" align="center" valign="bottom" style="font-family:'Libre Franklin', Helvetica, Arial, sans-serif; font-size:30px; mso-line-height-rule:exactly; line-height:34px; color:#ffffff; padding:0 0 0 0; background-size:100% auto; border-radius:10px;">
+                        <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                          <tr>
+                            <td align="center" valign="top" style="padding:0 0 20px 0;">
+                              <table cellpadding="0" cellspacing="0" border="0">
+                                <tr>
+                                  <td bgcolor="#eadac7" align="center" valign="middle" style="font-family:'Libre Franklin', Helvetica, Arial, sans-serif; font-size:30px; mso-line-height-rule:exactly; line-height:34px; color:#489f87; padding:10px 20px 10px 20px; border-radius:10px;"><strong>This is for You</strong></td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td align="center" valign="top"><img src="http://tabletrtd.com/codepen/DD-talk-10.png" alt="" width="100%" height="30" border="0" style="display:block;"></td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td align="center" valign="top" style="font-family:Helvetica, Arial, sans-serif; font-size:14px; mso-line-height-rule:exactly; line-height:20px; color:#3a3a3a; padding:20px 20px 20px 20px;">You rule, and always will. Just keep on keeping on. If you put one foot in front of the other, you'll walk&nbsp;somewhere.</td>
+                    </tr>
+                    <tr>
+                      <td align="center" valign="top" style="padding:0 0 20px 0;">
+                        <table cellpadding="0" cellspacing="0" border="0">
+                          <tr>
+                            <td bgcolor="#ffffff" style="padding:2px 2px 2px 2px; border-radius:12px;">
+                              <table cellpadding="0" cellspacing="0" border="0">
+                                <tr>
+                                  <td bgcolor="#489f87" style="padding:2px 2px 2px 2px; border-radius:10px;">
+                                    <table cellpadding="0" cellspacing="0" border="0" width="300">
+                                      <tr>
+                                        <td align="center" valign="middle" height="42" bgcolor="#ffffff" style="font-family:Helvetica, Arial, sans-serif; font-size:18px; mso-line-height-rule:exactly; line-height:22px; color:#489f87; padding:0 0 0 0; border-radius:8px;"><strong><label for="KOD" style="color:#489f87; text-decoration:none; display:block; padding:10px 10px 10px 10px;">UPDATE YOUR SELECTIONS</label></strong></td>
+                                      </tr>
+                                    </table>
+                                  </td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+            <table class="V25 widthFull" cellpadding="0" cellspacing="0" border="0" width="500" style="display:none;">
+              <tr>
+                <td align="center" valign="top" style="font-family:Helvetica, Arial, sans-serif; font-size:12px; mso-line-height-rule:exactly; line-height:16px; color:#3a3a3a; padding:20px 20px 20px 20px;">
+                  <webversion target="_blank" style="color:#3a3a3a; text-decoration:underline;">Behold Online</webversion>
+                </td>
+              </tr>
+              <tr>
+                <td bgcolor="#5561b7" background="http://tabletrtd.com/codepen/DD-talk-09.jpg" width="500" height="250" align="center" valign="bottom" style="font-family:'Libre Franklin', Helvetica, Arial, sans-serif; font-size:30px; mso-line-height-rule:exactly; line-height:34px; color:#ffffff; padding:0 0 0 0; background-size:100% auto; border-radius:0;">
+                  <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                    <tr>
+                      <td align="center" valign="top" style="padding:0 0 20px 0;">
+                        <table cellpadding="0" cellspacing="0" border="0">
+                          <tr>
+                            <td bgcolor="#ffb70c" align="center" valign="middle" style="font-family:'Libre Franklin', Helvetica, Arial, sans-serif; font-size:30px; mso-line-height-rule:exactly; line-height:34px; color:#5e68c6; padding:10px 20px 10px 20px; border-radius:0;"><strong>This is for You</strong></td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr>
+                <td align="center" valign="top" style="font-family:Helvetica, Arial, sans-serif; font-size:14px; mso-line-height-rule:exactly; line-height:20px; color:#3a3a3a; padding:20px 20px 20px 20px;">You rule, and always will. Just keep on keeping on. If you put one foot in front of the other, you'll walk&nbsp;somewhere.</td>
+              </tr>
+              <tr>
+                <td align="center" valign="top" style="padding:0 0 20px 0;">
+                  <table cellpadding="0" cellspacing="0" border="0">
+                    <tr>
+                      <td bgcolor="#5e68c6" style="padding:2px 2px 2px 2px; border-radius:0;">
+                        <table cellpadding="0" cellspacing="0" border="0">
+                          <tr>
+                            <td bgcolor="#ffb70c" style="padding:2px 2px 2px 2px; border-radius:0;">
+                              <table cellpadding="0" cellspacing="0" border="0" width="300">
+                                <tr>
+                                  <td align="center" valign="middle" height="42" bgcolor="#ff98b3" style="font-family:Helvetica, Arial, sans-serif; font-size:18px; mso-line-height-rule:exactly; line-height:22px; color:#5e68c6; padding:0 0 0 0; border-radius:0;"><strong><label for="KOD" style="color:#5e68c6; text-decoration:none; display:block; padding:10px 10px 10px 10px;">UPDATE YOUR SELECTIONS</label></strong></td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+            <table class="V26" cellpadding="0" cellspacing="0" border="0" width="100%" style="display:none;">
+              <tr>
+                <td align="center" valign="top" style="font-family:Helvetica, Arial, sans-serif; font-size:12px; mso-line-height-rule:exactly; line-height:16px; color:#3a3a3a; padding:20px 20px 20px 20px;">
+                  <webversion target="_blank" style="color:#3a3a3a; text-decoration:underline;">Behold Online</webversion>
+                </td>
+              </tr>
+              <tr>
+                <td bgcolor="#5561b7" background="http://tabletrtd.com/codepen/DD-talk-09.jpg" width="500" height="250" align="center" valign="bottom" style="font-family:'Libre Franklin', Helvetica, Arial, sans-serif; font-size:30px; mso-line-height-rule:exactly; line-height:34px; color:#ffffff; padding:0 0 0 0; background-size:100% auto; border-radius:2px;">
+                  <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                    <tr>
+                      <td align="center" valign="top" style="padding:0 0 20px 0;">
+                        <table cellpadding="0" cellspacing="0" border="0">
+                          <tr>
+                            <td bgcolor="#ffb70c" align="center" valign="middle" style="font-family:'Libre Franklin', Helvetica, Arial, sans-serif; font-size:30px; mso-line-height-rule:exactly; line-height:34px; color:#5e68c6; padding:10px 20px 10px 20px; border-radius:2px;"><strong>This is for You</strong></td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td align="center" valign="top"><img src="http://tabletrtd.com/codepen/DD-talk-11.png" alt="" width="100%" height="30" border="0" style="display:block;"></td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr>
+                <td align="center" valign="top" style="font-family:Helvetica, Arial, sans-serif; font-size:14px; mso-line-height-rule:exactly; line-height:20px; color:#3a3a3a; padding:20px 20px 20px 20px;">You rule, and always will. Just keep on keeping on. If you put one foot in front of the other, you'll walk&nbsp;somewhere.</td>
+              </tr>
+              <tr>
+                <td align="center" valign="top" style="padding:0 0 20px 0;">
+                  <table cellpadding="0" cellspacing="0" border="0">
+                    <tr>
+                      <td bgcolor="#5e68c6" style="padding:2px 2px 2px 2px; border-radius:6px;">
+                        <table cellpadding="0" cellspacing="0" border="0">
+                          <tr>
+                            <td bgcolor="#ffb70c" style="padding:2px 2px 2px 2px; border-radius:4px;">
+                              <table cellpadding="0" cellspacing="0" border="0" width="300">
+                                <tr>
+                                  <td align="center" valign="middle" height="42" bgcolor="#ff98b3" style="font-family:Helvetica, Arial, sans-serif; font-size:18px; mso-line-height-rule:exactly; line-height:22px; color:#5e68c6; padding:0 0 0 0; border-radius:2px;"><strong><label for="KOD" style="color:#5e68c6; text-decoration:none; display:block; padding:10px 10px 10px 10px;">UPDATE YOUR SELECTIONS</label></strong></td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+            <table class="V27" cellpadding="0" cellspacing="0" border="0" width="100%" style="display:none;">
+              <tr>
+                <td align="center" valign="top" style="padding:0 10px 0 10px;">
+                  <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                    <tr>
+                      <td align="center" valign="top" style="font-family:Helvetica, Arial, sans-serif; font-size:12px; mso-line-height-rule:exactly; line-height:16px; color:#3a3a3a; padding:20px 20px 20px 20px;">
+                        <webversion target="_blank" style="color:#3a3a3a; text-decoration:underline;">Behold Online</webversion>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td bgcolor="#5561b7" background="http://tabletrtd.com/codepen/DD-talk-09.jpg" width="500" height="250" align="center" valign="bottom" style="font-family:'Libre Franklin', Helvetica, Arial, sans-serif; font-size:30px; mso-line-height-rule:exactly; line-height:34px; color:#ffffff; padding:0 0 0 0; background-size:100% auto; border-radius:10px;">
+                        <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                          <tr>
+                            <td align="center" valign="top" style="padding:0 0 20px 0;">
+                              <table cellpadding="0" cellspacing="0" border="0">
+                                <tr>
+                                  <td bgcolor="#ffb70c" align="center" valign="middle" style="font-family:'Libre Franklin', Helvetica, Arial, sans-serif; font-size:30px; mso-line-height-rule:exactly; line-height:34px; color:#5e68c6; padding:10px 20px 10px 20px; border-radius:10px;"><strong>This is for You</strong></td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td align="center" valign="top"><img src="http://tabletrtd.com/codepen/DD-talk-10.png" alt="" width="100%" height="30" border="0" style="display:block;"></td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td align="center" valign="top" style="font-family:Helvetica, Arial, sans-serif; font-size:14px; mso-line-height-rule:exactly; line-height:20px; color:#3a3a3a; padding:20px 20px 20px 20px;">You rule, and always will. Just keep on keeping on. If you put one foot in front of the other, you'll walk&nbsp;somewhere.</td>
+                    </tr>
+                    <tr>
+                      <td align="center" valign="top" style="padding:0 0 20px 0;">
+                        <table cellpadding="0" cellspacing="0" border="0">
+                          <tr>
+                            <td bgcolor="#5e68c6" style="padding:2px 2px 2px 2px; border-radius:12px;">
+                              <table cellpadding="0" cellspacing="0" border="0">
+                                <tr>
+                                  <td bgcolor="#ffb70c" style="padding:2px 2px 2px 2px; border-radius:10px;">
+                                    <table cellpadding="0" cellspacing="0" border="0" width="300">
+                                      <tr>
+                                        <td align="center" valign="middle" height="42" bgcolor="#ff98b3" style="font-family:Helvetica, Arial, sans-serif; font-size:18px; mso-line-height-rule:exactly; line-height:22px; color:#5e68c6; padding:0 0 0 0; border-radius:8px;"><strong><label for="KOD" style="color:#5e68c6; text-decoration:none; display:block; padding:10px 10px 10px 10px;">UPDATE YOUR SELECTIONS</label></strong></td>
+                                      </tr>
+                                    </table>
+                                  </td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+            <table class="V1 widthFull" cellpadding="0" cellspacing="0" border="0" width="500" style="display:none;">
+              <tr>
+                <td align="center" valign="top" style="font-family:Helvetica, Arial, sans-serif; font-size:12px; mso-line-height-rule:exactly; line-height:16px; color:#3a3a3a; padding:20px 20px 20px 20px;">
+                  <webversion target="_blank" style="color:#3a3a3a; text-decoration:underline;">Scan Online</webversion>
+                </td>
+              </tr>
+              <tr>
+                <td bgcolor="#86878b" background="http://tabletrtd.com/codepen/DD-talk-07.jpg" width="500" height="250" align="center" valign="bottom" style="font-family:'Libre Franklin', Helvetica, Arial, sans-serif; font-size:30px; mso-line-height-rule:exactly; line-height:34px; color:#ffffff; padding:0 0 0 0; background-size:100% auto; border-radius:0;">
+                  <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                    <tr>
+                      <td align="center" valign="top" style="padding:0 0 20px 0;">
+                        <table cellpadding="0" cellspacing="0" border="0">
+                          <tr>
+                            <td bgcolor="#ffffff" align="center" valign="middle" style="font-family:'Libre Franklin', Helvetica, Arial, sans-serif; font-size:30px; mso-line-height-rule:exactly; line-height:34px; color:#3a3a3a; padding:10px 20px 10px 20px; border-radius:0;"><strong>Welcome</strong></td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr>
+                <td align="center" valign="top" style="font-family:Helvetica, Arial, sans-serif; font-size:14px; mso-line-height-rule:exactly; line-height:20px; color:#3a3a3a; padding:20px 20px 20px 20px;">Is this the real life? Or is this just&nbsp;fantasy?</td>
+              </tr>
+              <tr>
+                <td align="center" valign="top" style="padding:0 0 20px 0;">
+                  <table cellpadding="0" cellspacing="0" border="0">
+                    <tr>
+                      <td bgcolor="#ffffff" style="padding:2px 2px 2px 2px; border-radius:0;">
+                        <table cellpadding="0" cellspacing="0" border="0">
+                          <tr>
+                            <td bgcolor="#3a3a3a" style="padding:2px 2px 2px 2px; border-radius:0;">
+                              <table cellpadding="0" cellspacing="0" border="0" width="300">
+                                <tr>
+                                  <td align="center" valign="middle" height="42" bgcolor="#ffffff" style="font-family:Helvetica, Arial, sans-serif; font-size:18px; mso-line-height-rule:exactly; line-height:22px; color:#3a3a3a; padding:0 0 0 0; border-radius:0;"><strong><label for="KOD" style="color:#3a3a3a; text-decoration:none; display:block; padding:10px 10px 10px 10px;">UPDATE YOUR SELECTIONS</label></strong></td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<div class="camiah">
+  <strong class="show">made by<br>
+    camiah
+  </strong>
+  <a href="https://www.patreon.com/camiah" target="_blank"><svg viewBox="0 0 120 150"><rect x="40" width="10" height="10"></rect><polygon points="50 70 60 70 60 40 70 40 70 30 60 30 60 10 50 10 50 70"></polygon><polygon points="70 70 80 70 80 50 90 50 90 40 70 40 70 50 70 70"></polygon><polygon points="90 80 100 80 100 60 110 60 110 50 90 50 90 60 90 80"></polygon><rect x="110" y="60" width="10" height="40"></rect><rect x="100" y="100" width="10" height="20"></rect><rect x="90" y="120" width="10" height="20"></rect><polygon points="30 80 30 90 40 90 40 10 30 10 30 70 20 70 20 80 30 80"></polygon><rect x="10" y="60" width="10" height="10"></rect><rect y="70" width="10" height="20"></rect><rect x="10" y="90" width="10" height="20"></rect><rect x="20" y="110" width="10" height="20"></rect><rect x="30" y="130" width="10" height="10"></rect><rect x="40" y="140" width="50" height="10"></rect></svg></a>
+</div>
+
+</body></html>
